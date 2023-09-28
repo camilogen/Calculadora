@@ -13,9 +13,18 @@
   margin: 4px;
   cursor: pointer;
   user-select: none;
+
+}
+
+.boton-contenedor:hover {
+  background-color: #5a01a7;
 }
 
 .operador {
   background-color: #00471b;
 
+}
+
+.operador:hover {
+  background-color: #f60;
 }
