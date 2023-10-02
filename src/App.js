@@ -16,7 +16,11 @@ const agregarInput = val => {
 };
 
 const calcularResultado = () => {
-setInput(evaluate(input))
+  if (input) {
+    setInput(evaluate(input));
+  } else {
+    alert ("Por favor ingrese valores para realizar los calculos.");
+  }
 };
 
 
@@ -49,7 +53,7 @@ setInput(evaluate(input))
         <Boton handleClick={agregarInput}>*</Boton>
         </div>
         <div className='fila'>
-        <Boton handleClick={}>=</Boton>
+        <Boton handleClick={calcularResultado}>=</Boton>
         <Boton handleClick={agregarInput}>0</Boton>
         <Boton handleClick={agregarInput}>.</Boton>
         <Boton handleClick={agregarInput}>/</Boton>
@@ -64,5 +68,4 @@ setInput(evaluate(input))
     </div>
   );
 }
-
 export default App;
